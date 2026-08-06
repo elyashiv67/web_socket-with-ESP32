@@ -2,20 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>web socket</title>
+    <title>ESP32 Control Panel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="card">
+        <h1>ESP32 Control Panel</h1>
 
-    <h2>Send to ESP</h2>
-    <input type="text" id="messageInput" placeholder="Enter message">
-    <button onclick="sendMessage(document.getElementById('messageInput').value)">Send</button>
+        <p class="section-title">Send to ESP</p>
+        <div class="input-group">
+            <input type="text" id="messageInput" placeholder="Enter message...">
+            <button class="btn-send" onclick="sendMessage(document.getElementById('messageInput').value)">Send</button>
+        </div>
 
-    <h2>Received from ESP</h2>
-    <div id="receivedMessage">waiting...</div>
-    <br/>
-    <button id="rst_btn">reset</button>
+        <p class="section-title">Received from ESP</p>
+        <div class="status-box" id="receivedMessage">waiting...</div>
 
+        <button class="btn-reset" id="rst_btn">Reset</button>
+    </div>
 
-<script src="webSocket.js"></script>
+    <script src="webSocket.js"></script>
 </body>
 </html>

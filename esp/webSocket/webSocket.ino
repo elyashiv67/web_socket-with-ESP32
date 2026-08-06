@@ -68,7 +68,7 @@ void setup() {
   //home
   // while (!client.connect("10.0.0.10", 8080, "/")) {
     //phone
-    while (!client.connect("10.64.88.123", 8080, "/")) {
+    while (!client.connect("10.75.174.174", 8080, "/")) {
     Serial.print(".");
   }
   client.send("{\"id\": \"esp\"}");

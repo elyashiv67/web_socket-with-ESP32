@@ -60,6 +60,8 @@ void state_loop() {
         break;
       case rst:
         {
+          //מיד אחרי שה-state משתנה ל-rst, נקרא handle_rst() כדי לכבות את הבאזר.
+          handle_rst();
           String json = setObj(rst, "esp sends an reset");
           client.send(json);
           state = armed;

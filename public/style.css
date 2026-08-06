@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    width: 420px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 32px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.section-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    color: #333;
+}
+
+input[type="text"]:focus {
+    border-color: #4f8ef7;
+}
+
+.btn-send {
+    padding: 10px 20px;
+    background: #4f8ef7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-send:hover {
+    background: #3a7adf;
+}
+
+.status-box {
+    background: #f7f8fa;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 15px;
+    color: #444;
+    min-height: 52px;
+    margin-bottom: 24px;
+}
+
+.btn-reset {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: white;
+    color: #e84545;
+    border: 1.5px solid #e84545;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-reset:hover {
+    background: #e84545;
+    color: white;
+}

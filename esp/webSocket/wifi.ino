@@ -3,9 +3,9 @@
 // const char* ssid = "Kinneret College";
 // const char* ssid = "Magi";
 
-const char* ssid = "Elyashiv";
-const char* pass = "12345622es";
-const char* ipAddrress = "10.64.88.123";
+const char* ssid = "The";
+const char* pass = "0547787136";
+const char* ipAddrress = "10.75.174.174";
 
 // const char* pass = "0587127028";
 // const char* ipAddrress = "10.0.0.10";
